@@ -1,0 +1,26 @@
+.row{
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-left: : 0px;
+          margin-right: 0px;
+        }
+.container1{
+                padding-right: 50px;
+                padding-left: 100px;
+                padding-top: 0x;
+                padding-bottom: 0px;
+                color: #500000;
+                
+    } 
+#imagedropshadow1 {
+                      padding: 0px;
+                      border: solid 1px white;
+                      box-shadow: 1px 1px 5px white;
+                      }
+textarea{
+            max-row: 80%;
+            max-column: 80%;
+            max-width: 80%;
+            max-height: 80%;
+    }
+li.ex3:hover, li.ex3:active {background: #4eb1b3;}                
