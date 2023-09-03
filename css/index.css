@@ -17,7 +17,7 @@ shadow{
 
 section {
             width: 100%;
-            height: 450px;
+            height: 350px;
             margin: 0px;
             padding: 0px;
             }
@@ -30,17 +30,17 @@ section {
 .imagedropshadow {
                       padding: 0px;
                       border: solid 1px black;
-                      box-shadow: 1px 1px 5px black;
+                      box-shadow: 1px 1px 5px whitesmoke;
                       }
 #imagedropshadow {
                       padding: 5px;
                       border: solid 3px red;
                       }
 a:hover img#imagedropshadow {
-                                  border: solid 1px black;
-                                  -moz-box-shadow: 1px 1px 5px black;
-                                  -webkit-box-shadow: 1px 1px 5px black;
-                                   box-shadow: 1px 1px 5px black;
+                                  border: solid 1px white;
+                                  -moz-box-shadow: 1px 1px 5px white;
+                                  -webkit-box-shadow: 1px 1px 5px white;
+                                   box-shadow: 1px 1px 5px white;
                                 }
     
 .mySlides {
@@ -448,3 +448,133 @@ a:hover img#imagedropshadow {
     overflow-y: auto;
   }
 }
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    color: white;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #ed6b5b;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    form {
+      padding: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    input[type="text"],
+    input[type="file"],
+    textarea {
+      padding: 5px;
+    }
+    input[type="submit"] {
+      padding: 5px 10px;
+    }
+  }
+  footer {
+            
+            color: #fff;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .footer-column:hover {
+            transform: translateY(-10px);
+        }
+
+        .footer-column h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-column p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ff4500;
+        }
+
+        .subscribe-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-form input[type="email"]:focus {
+            background-color: #e04112;
+        }
+
+        .subscribe-form button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #e04112;
+        }
