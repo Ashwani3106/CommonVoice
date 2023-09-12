@@ -1,7 +1,7 @@
 .row{
           padding-left: 0px;
           padding-right: 0px;
-          margin-left: : 0px;
+          margin-left: 0px;
           margin-right: 0px;
         }
 .img-circle{
@@ -40,8 +40,7 @@
         margin-bottom: 10px;
     }
 
-li.ex3:hover, li.ex3:active {background: #4eb1b3;} 
-    }
+li.ex3:hover, li.ex3:active {background: #4eb1b3;}
 .loader {
   border: 8px solid #f3f3f3;
   border-radius: 50%;

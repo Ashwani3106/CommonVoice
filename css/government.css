@@ -1,7 +1,7 @@
 .row{
           padding-left: 0px;
           padding-right: 0px;
-          margin-left: : 0px;
+          margin-left: 0px;
           margin-right: 0px;
         }
 .img-circle{
@@ -38,8 +38,7 @@ img{
         max-width: 100%;
         max-height: 100%;
     }
-li.ex3:hover, li.ex3:active {background: #4eb1b3;} 
-    }
+li.ex3:hover, li.ex3:active {background: #4eb1b3;}
 .cls{
       position:fixed;
       overflow: hidden;

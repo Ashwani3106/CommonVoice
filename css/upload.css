@@ -1,7 +1,7 @@
 .row{
           padding-left: 0px;
           padding-right: 0px;
-          margin-left: : 0px;
+          margin-left: 0px;
           margin-right: 0px;
         }
 .container1{
@@ -18,8 +18,7 @@
                       box-shadow: 1px 1px 5px white;
                       }
 textarea{
-            max-row: 80%;
-            max-column: 80%;
+            max-lines: 80%;
             max-width: 80%;
             max-height: 80%;
     }

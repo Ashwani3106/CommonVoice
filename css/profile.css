@@ -1,26 +1,21 @@
 .row{
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-left: : 0px;
-          margin-right: 0px;
+          margin: 0;
+          padding: 0; 
         }
-.container1{
-                padding-right: 50px;
-                padding-left: 100px;
-                padding-top: 0x;
-                padding-bottom: 0px;
-                color: #500000;
-                
-} 
+.col-xs-12{
+  margin: 0;
+  padding: 0;
+}
 #imagedropshadow1 {
                       padding: 0px;
                       border: solid 1px black;
                       box-shadow: 10px 10px #E8E8E8;
-                      }
+                      background-size: cover;                      }
 #imagedropshadow2 {
                       padding: 0px;
                       border: solid 1px black;
                       box-shadow: 1px 1px 5px black;
+                      background-size: cover;
                       }
      
 .loader {
@@ -32,7 +27,8 @@
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   bottom: 0;
-  margin-left: 50%;
+  margin-left: 45%;
+  display: flex;
 }
 
 /* Safari */
@@ -45,4 +41,128 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-    li.ex3:hover, li.ex3:active {background:;}
+.nav {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  background-image: url(images/gradientbackground.jpg);
+  background-size:100% 100%;
+  z-index: 200;
+  position:fixed;
+  top: 0;
+}
+
+.nav > .nav-header {
+  display: block;
+  align-items: center;
+  height: 60px;  
+}
+
+.nav > .nav-header > .nav-title {
+  display: flex;
+  font-size: 18px;
+  color: #fff;
+  padding: 15px 10px 10px 10px;
+  align-items: center;
+  margin: 0px;
+  height: 60px;
+}
+
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: flex;
+  float: right;
+  font-size: 15px;
+}
+
+.nav > .nav-links > a {
+  display: flex;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  height: 50px;
+  
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #4eb1b3;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.nav > .nav-links > right{
+  margin-left: auto;
+}
+@media (max-width:760px) {
+  .nav{
+    background-image: url(images/gradientbackground.jpg);
+    background-size:100% 100%;
+  }
+  .nav > .nav-header{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-image: none;
+  }  
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid white;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #4eb1b3;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #4eb1b3;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+body{
+  margin: 0;
+}
+#last{
+  position: absolute;
+  bottom : 0;
+  width: 100%;
+  margin-bottom: 10%;
+}

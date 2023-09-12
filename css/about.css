@@ -1,13 +1,7 @@
 .row{
           padding-left: 0px;
           padding-right: 0px;
-          margin-left: : 0px;
-          margin-right: 0px;
-        }
-.row{
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-left: : 0px;
+          margin-left: 0px;
           margin-right: 0px;
         }
 #imagedropshadow1 {
@@ -116,7 +110,6 @@ footer {
 .nav {
   height: 50px;
   width: 100%;
-  background-color:;
   align-items: center;
   display: flex;
   background-image: url(images/gradientbackground.jpg);background-size:100% 100%;
@@ -190,10 +183,6 @@ footer {
     display: block;
     background-image: none;
   }
-  .nav >.nav-header > nav-title{
-  
-  }
-  
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
